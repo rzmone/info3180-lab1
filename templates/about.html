@@ -1,11 +1,18 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta charset="UTF-8"> 
-<title>My Website - About</title> 
-</head> 
-<body> 
-<h1>Ramone Watson</h1> 
-<p>I like cars.</p> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <title>My Website - About</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Ramone Watson</h1>
+        <p>I like cars.</p>
+
+        <img src="{{ url_for('static', filename='images/image.jpg') }}" 
+             alt="My Image" 
+             width="300">
+    </div>
+</body>
+</html>
